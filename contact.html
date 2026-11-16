@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | JobNest</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial;background:#f6f8fc;color:#102c50}a{text-decoration:none;color:inherit}.wrap{width:90%;max-width:1100px;margin:auto}.nav{background:white;padding:20px 0}.navin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.logo{font-size:25px;font-weight:800}.logo span{color:#2563eb}.links{display:flex;gap:20px;font-size:14px}.hero{background:#102c50;color:white;text-align:center;padding:55px 15px}.hero h1{font-size:36px;margin-bottom:10px}.hero p{color:#c4d2e5}.main{display:grid;grid-template-columns: .85fr 1.15fr;gap:25px;padding:55px 0 75px}.info,.form{background:white;border:1px solid #e5eaf2;border-radius:12px;padding:28px}.info h2,.form h2{font-size:22px;margin-bottom:12px}.info>p,.form>p{font-size:14px;color:#718096;margin-bottom:25px;line-height:1.7}.item{display:flex;gap:14px;margin:23px 0}.symbol{width:43px;height:43px;flex-shrink:0;background:#eff6ff;color:#2563eb;border-radius:9px;display:grid;place-items:center;font-size:19px}.item h3{font-size:14px}.item p{font-size:13px;color:#718096;margin-top:3px}.field{margin-bottom:16px}.field label{display:block;font-size:13px;font-weight:bold;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid #dce4ef;border-radius:7px;font:14px Arial;outline-color:#2563eb}.btn{background:#2563eb;color:white;border:0;padding:14px 20px;border-radius:7px;font-weight:bold;cursor:pointer;width:100%}.footer{background:#071d35;color:#c4d2e5;text-align:center;padding:25px;font-size:13px}
+@media(max-width:750px){.main{grid-template-columns:1fr}.links{gap:12px}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="logo" href="index.html">JOB<span>NEST.</span></a><nav class="links"><a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a href="companies.html">Companies</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+<section class="hero"><h1>Get in Touch</h1><p>Have a question or feedback? We'd love to hear from you.</p></section>
+<main class="wrap main">
+<section class="info"><h2>Let's Talk</h2><p>Reach out to the JobNest team for general questions, platform feedback or support inquiries.</p>
+<div class="item"><div class="symbol">✉</div><div><h3>Email Us</h3><p>hello@jobnest.example</p></div></div>
+<div class="item"><div class="symbol">☎</div><div><h3>Call Us</h3><p>+92 300 1234567 (sample)</p></div></div>
+<div class="item"><div class="symbol">⌖</div><div><h3>Our Location</h3><p>Lahore, Pakistan</p></div></div>
+<div class="item"><div class="symbol">◷</div><div><h3>Working Hours</h3><p>Monday – Friday · 9 AM – 5 PM</p></div></div>
+</section>
+<section class="form"><h2>Send Us a Message</h2><p>Fill in the details below. This is a frontend demo form.</p>
+<form onsubmit="event.preventDefault();alert('Thank you! This is a demo form. Connect a backend to receive messages.');">
+<div class="field"><label>Full Name</label><input required placeholder="Your full name"></div>
+<div class="field"><label>Email Address</label><input required type="email" placeholder="you@example.com"></div>
+<div class="field"><label>Subject</label><select required><option value="">Choose a subject</option><option>Job seeker support</option><option>Employer inquiry</option><option>Technical issue</option><option>General feedback</option></select></div>
+<div class="field"><label>Your Message</label><textarea required rows="5" placeholder="Write your message here..."></textarea></div>
+<button class="btn">Send Message →</button>
+</form></section>
+</main>
+<footer class="footer">© 2026 JobNest. All rights reserved.</footer>
+</body>
+</html>

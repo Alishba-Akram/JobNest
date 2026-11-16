@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Jobs | JobNest</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:#f6f8fc;color:#102c50}a{text-decoration:none;color:inherit}.container{width:90%;max-width:1200px;margin:auto}.nav{background:white;padding:20px 0;border-bottom:1px solid #e5eaf2}.navin{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.logo{font-size:26px;font-weight:800}.logo span{color:#2563eb}.links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}.links a:hover{color:#2563eb}.btn{background:#2563eb;color:white;padding:12px 18px;border-radius:7px;display:inline-block;font-weight:bold;font-size:13px;border:0;cursor:pointer}.heading{padding:45px 0 25px}.heading h1{font-size:36px;margin-bottom:10px}.muted{color:#718096;font-size:14px}.search{background:white;padding:18px;border-radius:12px;display:flex;gap:12px;flex-wrap:wrap;box-shadow:0 5px 20px #102c5010;margin-bottom:30px}.search input,.search select{flex:1;min-width:170px;padding:14px;border:1px solid #e1e7ef;border-radius:7px}.layout{display:grid;grid-template-columns:250px 1fr;gap:25px;padding-bottom:70px}.filters,.job{background:white;border:1px solid #e5eaf2;border-radius:11px;padding:22px}.filters h3{margin-bottom:18px}.filtergroup{border-top:1px solid #edf0f5;padding:18px 0}.filtergroup h4{margin-bottom:12px}.filtergroup label{display:block;color:#65758b;font-size:13px;margin:10px 0}.filtergroup input{margin-right:8px}.resultshead{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:10px}.resultshead select{padding:10px;border:1px solid #dfe6ef;border-radius:7px}.job{margin-bottom:15px;transition:.2s}.job:hover{border-color:#2563eb;transform:translateY(-2px)}.jobtop{display:flex;align-items:center;gap:15px}.icon{width:52px;height:52px;background:#eff6ff;color:#2563eb;border-radius:10px;display:grid;place-items:center;font-size:21px;font-weight:bold}.job h3{font-size:17px;margin-bottom:6px}.job p{color:#718096;font-size:13px;line-height:1.7}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0}.tag{background:#eff6ff;color:#2563eb;padding:7px 10px;border-radius:5px;font-size:11px;font-weight:bold}.tag.green{background:#ecfdf5;color:#059669}.jobbottom{border-top:1px solid #edf0f5;padding-top:15px;display:flex;justify-content:space-between;align-items:center;gap:10px}.salary{font-weight:bold;font-size:14px}.salary small{color:#718096;font-weight:normal}.footer{background:#071d35;color:#c5d0df;padding:28px;text-align:center;font-size:13px}
+@media(max-width:750px){.layout{grid-template-columns:1fr}.heading h1{font-size:29px}.links{gap:12px}.jobbottom{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="container navin">
+<a class="logo" href="index.html">JOB<span>NEST.</span></a>
+<nav class="links"><a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a href="companies.html">Companies</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<a class="btn" href="post-job.html">Post a Job +</a>
+</div></header>
+<main class="container">
+<div class="heading"><h1>Find Your Next Opportunity</h1><p class="muted">Explore opportunities from companies that value your talent.</p></div>
+<form class="search" action="jobs.html" method="get">
+<input id="keyword" type="search" name="search" placeholder="Job title, skill or company">
+<select name="location"><option value="">All Locations</option><option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Remote</option></select>
+<button class="btn">Search Jobs</button>
+</form>
+<div class="layout">
+<aside class="filters">
+<h3>Filter Jobs</h3>
+<div class="filtergroup"><h4>Job Type</h4>
+<label><input type="checkbox"> Full Time</label><label><input type="checkbox"> Part Time</label><label><input type="checkbox"> Internship</label><label><input type="checkbox"> Contract</label>
+</div>
+<div class="filtergroup"><h4>Work Mode</h4>
+<label><input type="checkbox"> On Site</label><label><input type="checkbox"> Remote</label><label><input type="checkbox"> Hybrid</label>
+</div>
+<div class="filtergroup"><h4>Experience</h4>
+<label><input type="checkbox"> Fresh / Entry Level</label><label><input type="checkbox"> 1–3 Years</label><label><input type="checkbox"> 3–5 Years</label><label><input type="checkbox"> 5+ Years</label>
+</div>
+<div class="filtergroup"><h4>Category</h4>
+<label><input type="checkbox"> Development</label><label><input type="checkbox"> Design</label><label><input type="checkbox"> Marketing</label><label><input type="checkbox"> Finance</label>
+</div>
+</aside>
+<section>
+<div class="resultshead"><strong>Featured Opportunities</strong><select><option>Most Relevant</option><option>Newest First</option></select></div>
+<article class="job"><div class="jobtop"><div class="icon">T</div><div><h3>Frontend Developer</h3><p>TechVision Solutions · Lahore, Pakistan</p></div></div><div class="tags"><span class="tag">Full Time</span><span class="tag green">Hybrid</span><span class="tag">1–3 Years</span></div><div class="jobbottom"><div class="salary">PKR 80K – 120K <small>/ month</small></div><a class="btn" href="job-details.html">View Details →</a></div></article>
+<article class="job"><div class="jobtop"><div class="icon" style="background:#fff1f2;color:#e11d48">D</div><div><h3>UI/UX Designer</h3><p>Design Studio · Karachi, Pakistan</p></div></div><div class="tags"><span class="tag">Full Time</span><span class="tag green">Remote</span><span class="tag">1–2 Years</span></div><div class="jobbottom"><div class="salary">PKR 60K – 90K <small>/ month</small></div><a class="btn" href="job-details.html">View Details →</a></div></article>
+<article class="job"><div class="jobtop"><div class="icon" style="background:#ecfdf5;color:#059669">M</div><div><h3>Digital Marketing Executive</h3><p>MarketPro Agency · Islamabad, Pakistan</p></div></div><div class="tags"><span class="tag">Full Time</span><span class="tag green">Hybrid</span><span class="tag">Fresh / 1 Year</span></div><div class="jobbottom"><div class="salary">PKR 50K – 75K <small>/ month</small></div><a class="btn" href="job-details.html">View Details →</a></div></article>
+<article class="job"><div class="jobtop"><div class="icon" style="background:#fff7ed;color:#ea580c">C</div><div><h3>Junior Backend Developer</h3><p>CodeCraft Technologies · Lahore, Pakistan</p></div></div><div class="tags"><span class="tag">Full Time</span><span class="tag">On Site</span><span class="tag">Entry Level</span></div><div class="jobbottom"><div class="salary">PKR 70K – 100K <small>/ month</small></div><a class="btn" href="job-details.html">View Details →</a></div></article>
+<article class="job"><div class="jobtop"><div class="icon" style="background:#f5f3ff;color:#7c3aed">A</div><div><h3>HR Assistant</h3><p>Alpha Business Group · Remote</p></div></div><div class="tags"><span class="tag">Part Time</span><span class="tag green">Remote</span><span class="tag">Fresh</span></div><div class="jobbottom"><div class="salary">PKR 35K – 50K <small>/ month</small></div><a class="btn" href="job-details.html">View Details →</a></div></article>
+</section>
+</div>
+</main>
+<footer class="footer">© 2026 JobNest. All rights reserved.</footer>
+</body>
+</html>
